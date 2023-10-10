@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F3BC168F-ABCD-49EA-B922-12ECCA5A2038}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B76FA59-B1EE-48FE-A789-CB62D14D9A58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiornateMondiali.Test", "tests\GiornateMondiali.Test\GiornateMondiali.Test.csproj", "{42E2B088-E064-4AAD-913B-9F00EF21D940}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiornateMondiali", "src\GiornateMondiali\GiornateMondiali.csproj", "{E6E02148-E2DD-4D9F-A6C5-33E1C454757D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiornateMondiali.Api", "src\GiornateMondiali.Api\GiornateMondiali.Api.csproj", "{4FE22A99-4339-4022-8E3E-C6BB5D901B2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiornateMondiali.Core", "src\GiornateMondiali.Core\GiornateMondiali.Core.csproj", "{FF95EC9B-029C-4E32-B66C-5C3E61E3734A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9884ECB7-CEB0-4FCB-9B95-9092714E363E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42E2B088-E064-4AAD-913B-9F00EF21D940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E2B088-E064-4AAD-913B-9F00EF21D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E2B088-E064-4AAD-913B-9F00EF21D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E2B088-E064-4AAD-913B-9F00EF21D940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42E2B088-E064-4AAD-913B-9F00EF21D940} = {F3BC168F-ABCD-49EA-B922-12ECCA5A2038}
+		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
+		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
+		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8075BA45-63D4-45A1-B0D2-360563BD82FA}
+	EndGlobalSection
+EndGlobal
