@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\singleYear.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\singleYear.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\everyXyears.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\fixed.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
