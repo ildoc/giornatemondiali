@@ -53,9 +53,9 @@ namespace GiornateMondiali
                 var pressione = body.QuerySelector("div.altriDati-pressione").InnerText;
 
 
-                var hour = date.ToDateTime(new TimeOnly(Convert.ToInt32(ora[0]), Convert.ToInt32(ora[1]));
+                var hour = date.ToDateTime(new TimeOnly(Convert.ToInt32(ora[0]), Convert.ToInt32(ora[1])));
 
-                dailyForecast.AddForecast(new HourlyForecast(hour, desc,img,Convert.ToDouble(temp),prec, ));
+                //dailyForecast.AddForecast(new HourlyForecast(hour, desc,img,Convert.ToDouble(temp),prec, ));
 
                 Console.WriteLine(hf);
             }
