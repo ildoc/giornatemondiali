@@ -2,13 +2,27 @@
 
 namespace GiornateMondiali.Core
 {
-    public static class GmCore
+    public class GmService : IGmService
     {
         private const string fixedDays = "fixed.csv";
         private const string variableDays = "variables.csv";
         private const string everyXyearsDays = "everyXyears.csv";
 
-        public static List<SpecialDay> GetSpecialDays(int year)
+        private List<SpecialDay>? cachedSpecialDays;
+
+        public SpecialDayResponse GetSpecialDays(DateTime date)
+        {
+            if (cachedSpecialDays == default)
+                cachedSpecialDays = GetSpecialDays(date.Year);
+
+            var today = cachedSpecialDays.Find(x => x.Date.Date == date.Date) ?? new SpecialDay(date, "Oggi niente", "", new List<string>());
+            var next = cachedSpecialDays.Where(x => x.Date.Date > date.Date).Take(5).ToList();
+
+
+            return new SpecialDayResponse(today, next);
+        }
+
+        private static List<SpecialDay> GetSpecialDays(int year)
         {
             var specialDays = new List<SpecialDay>();
 

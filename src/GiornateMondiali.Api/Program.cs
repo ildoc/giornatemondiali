@@ -1,4 +1,4 @@
-using GiornateMondiali.Core;
+﻿using GiornateMondiali.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<IGmService,GmService>();
 
 var app = builder.Build();
 
@@ -18,12 +20,10 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
-
-app.MapGet("/giornatemondiali", () =>
+app.MapGet("/giornatemondiali", (IGmService gmService) =>
 {
     var today = DateTime.Today;
-    var specialDays = GmCore.GetSpecialDays(today.Year).Where(x => x.Date.Date == DateTime.Today).ToList();
-    return specialDays;
+    return gmService.GetSpecialDays(today);
 })
 .WithName("GiornateMondiali")
 .WithOpenApi();
