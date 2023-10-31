@@ -15,9 +15,9 @@ namespace GiornateMondiali.Core
             if (cachedSpecialDays == default)
                 cachedSpecialDays = GetSpecialDays(date.Year);
 
-            var today = cachedSpecialDays.Find(x => x.Date.Date == date.Date) ?? new SpecialDay(date, "Oggi niente", "", new List<string>());
+            var today = cachedSpecialDays.Where(x => x.Date.Date == date.Date).ToList();
+            if(!today.Any()) today.Add(new SpecialDay(date, "Oggi niente", "", new List<string>()));
             var next = cachedSpecialDays.Where(x => x.Date.Date > date.Date).Take(5).ToList();
-
 
             return new SpecialDayResponse(today, next);
         }
