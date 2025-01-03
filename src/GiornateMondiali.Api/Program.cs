@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IGmService,GmService>();
+builder.Services.AddSingleton<IGmService, GmService>();
 
 var app = builder.Build();
 

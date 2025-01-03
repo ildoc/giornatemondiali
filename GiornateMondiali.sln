@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiornateMondiali.Core", "sr
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9884ECB7-CEB0-4FCB-9B95-9092714E363E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiornateMondiali.Bot", "src\GiornateMondiali.Bot\GiornateMondiali.Bot.csproj", "{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9884ECB7-CEB0-4FCB-9B95-9092714E363E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{E6E02148-E2DD-4D9F-A6C5-33E1C454757D} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
 		{4FE22A99-4339-4022-8E3E-C6BB5D901B2F} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
 		{FF95EC9B-029C-4E32-B66C-5C3E61E3734A} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
+		{E4D67CF9-9E2F-4916-8B55-E42CC08E86DD} = {3B76FA59-B1EE-48FE-A789-CB62D14D9A58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8075BA45-63D4-45A1-B0D2-360563BD82FA}

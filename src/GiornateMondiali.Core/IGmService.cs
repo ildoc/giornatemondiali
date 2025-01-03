@@ -1,9 +1,8 @@
 ﻿using GiornateMondiali.Core.Models;
 
-namespace GiornateMondiali.Core
+namespace GiornateMondiali.Core;
+
+public interface IGmService
 {
-    public interface IGmService
-    {
-        SpecialDayResponse GetSpecialDays(DateTime date);
-    }
+    SpecialDayResponse GetSpecialDays(DateTime date);
 }
